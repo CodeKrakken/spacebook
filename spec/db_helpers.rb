@@ -1,5 +1,6 @@
 def add_posts_to_database
-  Post.create(message: "hello")
-  Post.create(message: "world")
-  Post.create(message: "Bye")
+  user = create(:user)
+  user.posts.create(message: "hello")
+  user.posts.create(message: "world")
+  user.posts.create(message: "Bye")
 end
