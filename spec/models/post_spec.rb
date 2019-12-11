@@ -8,7 +8,6 @@ RSpec.describe Post, type: :model do
 
   context '#sortedbymostrecent' do
     it "returns posts in reverse chronological order" do
-
       post1 = user.posts.create(message: "hello")
       post2 = user.posts.create(message: "world")
       post3 = user.posts.create(message: "Bye")
