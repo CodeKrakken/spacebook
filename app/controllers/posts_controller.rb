@@ -43,7 +43,7 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
-    if @post.user_id === current_user.id
+    if @post.user_id == current_user.id
       @post.update(post_params)
       flash[:notice] = "Your post has been updated"
     elsif @post.user_id != current_user.id
