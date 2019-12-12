@@ -13,8 +13,12 @@ class CommentsController < ApplicationController
 
   def update
     @comment = Comment.find(params[:id])
-    @comment.update(comment_params)
-
+    if @comment.user_id == current_user.id
+      @comment.update(comment_params)
+      flash[:notice] = "Your comment has been updated"
+    else 
+      flash[:error] = "You cannot update other people's comments"
+    end
     redirect_to posts_url
   end
 
