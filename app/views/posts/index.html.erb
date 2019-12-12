@@ -67,8 +67,10 @@
           <div id="comment_<%=comment.id%>">
           <%=user.first_name + " " + user.surname  %>:
           <%= comment.message %>
+          <% if comment.update_valid? %>
           <br>
           <%= link_to('Update', "/comments/#{comment.id}/edit", url_options = {method: "get"}) %>
+          <%end%>
           <br>
           </div>
           <%end%>
