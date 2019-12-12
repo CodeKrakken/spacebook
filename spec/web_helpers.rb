@@ -27,5 +27,3 @@ def sign_up_and_go_to_new_post
   visit "/posts"
   click_link "New Post"
 end
-
-

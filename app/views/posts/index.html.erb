@@ -63,27 +63,31 @@
 
       <div class="listComments">
         <% post.comments.each do |comment| %>
-        <% user = User.find(comment.user_id)%>
-          <div id="comment_<%=comment.id%>">
-          <%=user.first_name + " " + user.surname  %>:
-          <%= comment.message %>
-          <% if comment.update_valid? %>
-          <br>
-          <%= link_to('Update', "/comments/#{comment.id}/edit", url_options = {method: "get"}) %>
-          <%end%>
-          <br>
-          </div>
-          <%end%>
-        </div>
-          <div class="addComment">
-            <%= form_with model: post.comments.build, local: true do |form| %>
-            <%= form.label :comment%>
-            <p> <%= form.text_area :message %> </p>
-            <%= form.hidden_field :post_id%>
-            <%= form.submit "Add Comment" %>
-            <br>
-            <br>
+          <% user = User.find(comment.user_id)%>
+            <div id="comment_<%=comment.id%>">
+              <%=user.first_name + " " + user.surname  %>:
+              <%= comment.message %>
+              <%if comment.user_id == current_user.id %>
+                <br>
+                <% if comment.update_valid? %>
+                  <%= link_to('Update', "/comments/#{comment.id}/edit", url_options = {method: "get"}) %>
+                <%end%>
+
+                  <%= link_to('Delete', "/comments/#{comment.id}", url_options = {method: "delete"}) %>
+                </div>
+              <%end%>
             <%end%>
+            </div>
+
+            <div class="addComment">
+              <%= form_with model: post.comments.build, local: true do |form| %>
+                <%= form.label :comment%>
+                <p> <%= form.text_area :message %> </p>
+                <%= form.hidden_field :post_id%>
+                <%= form.submit "Add Comment" %>
+                <br>
+                <br>
+              <%end%>
           </div>
       </div>
     </div>
