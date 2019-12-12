@@ -9,14 +9,19 @@ class CommentsController < ApplicationController
 
   def edit
     @comment = Comment.find(params[:id])
+    if @comment.update_valid?
+      @comment
+    else
+      redirect_to posts_url
+    end
   end
 
   def update
     @comment = Comment.find(params[:id])
-    if @comment.user_id == current_user.id
+    if @comment.user_id == current_user.id 
       @comment.update(comment_params)
       flash[:notice] = "Your comment has been updated"
-    else 
+    else
       flash[:error] = "You cannot update other people's comments"
     end
     redirect_to posts_url
