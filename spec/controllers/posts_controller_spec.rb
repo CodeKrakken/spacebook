@@ -33,7 +33,7 @@ RSpec.describe PostsController, type: :controller do
     end
   end
 
-  describe "PUT / :id " do
+  describe "PUT / :id  for 'update' requests" do
 
     it 'verify the PUT request url' do
       post = create(:post, message: "Hello, world!")
