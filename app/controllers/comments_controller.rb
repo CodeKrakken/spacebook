@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  before_action :redirect_if_user_is_not_signed_in
 
   def create
     current_user.comments.create(comment_params)
