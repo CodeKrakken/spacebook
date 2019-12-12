@@ -58,28 +58,30 @@
           <%= link_to('Delete', "/posts/#{post.id}", url_options = {method: "delete"}) %>
         <%end%>
       </div>
+      <div class="post-comments">
+        <b>Comments</b>
 
       <div class="listComments">
         <% post.comments.each do |comment| %>
         <% user = User.find(comment.user_id)%>
+          <div id="comment_<%=comment.id%>">
           <%=user.first_name + " " + user.surname  %>:
           <%= comment.message %>
           <br>
+          <%= link_to('Update', "/comments/#{comment.id}/edit", url_options = {method: "get"}) %>
+          <br>
+          </div>
           <%end%>
-
+        </div>
           <div class="addComment">
-
             <%= form_with model: post.comments.build, local: true do |form| %>
             <%= form.label :comment%>
-
             <p> <%= form.text_area :message %> </p>
             <%= form.hidden_field :post_id%>
-
             <%= form.submit "Add Comment" %>
             <br>
             <br>
             <%end%>
-
           </div>
       </div>
     </div>
