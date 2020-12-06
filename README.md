@@ -1,9 +1,6 @@
 # spacebook
 
-Makers group project exploring Rails. Created in a group with <a href="https://github.com/edcourage">Ed</a>, <a href="https://github.com/edcourage">Shubs</a>, <a href="https://github.com/edcourage">Freddie</a>, <a href="https://github.com/edcourage">Amy</a> & <a href="https://github.com/edcourage">Sara</a>.
-
-## How to contribute to this project
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+Makers group project exploring Rails. Created in a group with <a href="https://github.com/edcourage">Ed</a>, <a href="https://github.com/SHUBV92">Shubs</a>, <a href="https://github.com/SevenSecrets">Freddie</a>, <a href="https://github.com/amybalmforth">Amy</a> & <a href="https://github.com/sarar0">Sara</a>.
 
 ## Quickstart
 
