@@ -1,6 +1,6 @@
-# SpaceBook
+# spacebook
 
-Imagine if Facebook but in space
+Makers group project exploring Rails. Created in a group with Ed Shubs Freddy Amy 
 
 ## How to contribute to this project
 See [CONTRIBUTING.md](CONTRIBUTING.md)
