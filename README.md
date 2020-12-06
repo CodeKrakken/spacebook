@@ -1,6 +1,6 @@
 # spacebook
 
-Makers group project exploring Rails. Created in a group with Ed, Shubs, Freddie, Amy & Sara.
+Makers group project exploring Rails. Created in a group with <a href="https://github.com/edcourage">Ed</a>, <a href="https://github.com/edcourage">Shubs</a>, <a href="https://github.com/edcourage">Freddie</a>, <a href="https://github.com/edcourage">Amy</a> & <a href="https://github.com/edcourage">Sara</a>.
 
 ## How to contribute to this project
 See [CONTRIBUTING.md](CONTRIBUTING.md)
