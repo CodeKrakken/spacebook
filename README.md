@@ -1,4 +1,4 @@
-# spacebook
+# Spacebook
 
 Makers group project exploring Rails. Created in a group with <a href="https://github.com/edcourage">Ed</a>, <a href="https://github.com/SHUBV92">Shubs</a>, <a href="https://github.com/SevenSecrets">Freddie</a>, <a href="https://github.com/amybalmforth">Amy</a> & <a href="https://github.com/sarar0">Sara</a>.
 
@@ -13,9 +13,11 @@ Makers group project exploring Rails. Created in a group with <a href="https://g
 > bin/rails server # Start the server at localhost:3000
 ```
 
-*OR*
+## Visit
 
-Visit us [here](https://spaciest-of-books.herokuapp.com/)
+Hosted [here](https://spaciest-of-books.herokuapp.com/)
+
+## Status
 
 *Travis CI build status (master):*
 
