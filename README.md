@@ -13,9 +13,18 @@ Makers group project exploring Rails. Created in a group with <a href="https://g
 > bin/rails server # Start the server at localhost:3000
 ```
 
+## Features
+
+* Visitors can sign up for a new account, or sign in with an existing one
+* Users can post and read existing posts
+* Users can like or comment on posts
+* Users can unlike posts if they have already liked them
+* Posts display name of poster, time and date of posting, number of likes and all comments
+* Stretch - we planned to add liking comments, deleting posts and comments, and adding friends. It is a social network after all!
+
 ## Visit
 
-Hosted [here](https://spaciest-of-books.herokuapp.com/)
+Hosted [here](https://spaciest-of-books.herokuapp.com/). The server takes a while to get going, so please be patient.
 
 ## Status
 
