@@ -1,6 +1,6 @@
 # Spacebook
 
-Makers group project exploring Rails. Created in a group with <a href="https://github.com/edcourage">Ed</a>, <a href="https://github.com/SHUBV92">Shubs</a>, <a href="https://github.com/SevenSecrets">Freddie</a>, <a href="https://github.com/amybalmforth">Amy</a> & <a href="https://github.com/sarar0">Sara</a>.
+Makers group project exploring Rails. Created with <a href="https://github.com/edcourage">Ed</a>, <a href="https://github.com/SHUBV92">Shubs</a>, <a href="https://github.com/SevenSecrets">Freddie</a>, <a href="https://github.com/amybalmforth">Amy</a> & <a href="https://github.com/sarar0">Sara</a>.
 
 ## Setup
 
